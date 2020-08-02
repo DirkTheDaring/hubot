@@ -29,8 +29,12 @@ It will be removed at some point!
 
 The following environment variables should be provided if you want to use Hubot.
 
-* `HUBOT_SLACK_TOKEN` - Required Slack hubot integration API token.
-  See [hubot-slack documentation](https://slack.dev/hubot-slack/).
+* `BOTBUILDER_APP_ID` - This is the Id of your bot.
+  See [BotFramework](https://github.com/microsoft/BotFramework-Hubot).
+* `BOTBUILDER_APP_PASSWORD` - This is the secret for your bot.
+* `BOTBUILDER_ENDPOINT` - This is the secret for your bot.
+* `HUBOT_TEAMS_ENABLE_AUTH` - When set to true, restricts sending commands to hubot to a specific set of users in Teams. Messages from all non-Teams channels are blocked. Authorization is disabled by default.
+* `HUBOT_TEAMS_INITIAL_ADMINS` -  Required if `HUBOT_TEAMS_ENABLE_AUTH` is true. A comma-separated list of user principal names (UPNs). The users on this list will be admins and able to send commands to hubot when the hubot is first run with authorization enabled.
 * `HUBOT_NAME` - Optional bot name.
   Defaults to `robot`.
 * `HUBOT_OWNER` - Optional bot owner name.
